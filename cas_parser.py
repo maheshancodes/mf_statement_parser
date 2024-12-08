@@ -205,12 +205,6 @@ def calculate_returns(fund_details_dict):
 
      total_cost_value  = calculate_total_invested_amount(fund_details_dict[fund_name]["Transactions"])
 
-     #nav_values = 
-     #if (os.popen("uname").read().strip('\r\n')) == 'Linux':
-     #    nav_values = os.popen('grep {0} nav_report.txt'.format(isin_code)).read().strip('\r\n').split(';')
-     #else:
-     #    nav_values = os.popen('findstr {0} nav_report.txt'.format(isin_code)).read().strip('\r\n').split(';')
-     
      nav_value, nav_date = get_latest_nav(isin_code) 
      overall_fund_valuation = float(total_units) * float(nav_value)
      
