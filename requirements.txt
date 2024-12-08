@@ -1,0 +1,4 @@
+pyxirr
+tabulate
+requests
+pdfplumber
