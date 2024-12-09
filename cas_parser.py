@@ -169,7 +169,7 @@ def calculate_total_invested_amount(transactions):
 def calculate_returns(fund_details_dict):
    overall_table=[]
    output_table=[]
-   ignore_funds = ['Axis_Liquid_Fund','ICICI_Prudential_Liquid_Fund']
+   ignore_funds = []
    overall_headers = ['Type','Invested Amt','Valuation Date','Current Value','Profit/Loss','XIRR']
    headers = ['Fund','Invested Amt','Total Units','NAV','NAV Date','Current Value','Profit/Loss','XIRR']
    overall_invested_amount_from_all_funds = 0
